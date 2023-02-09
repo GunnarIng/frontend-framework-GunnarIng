@@ -16,12 +16,6 @@ export default class Chart extends Component {
   }
 
   render() {
-    const 2022Index = frameworks[0].surveys.findIndex(survey => survey.year === 2022)
-
-    const sortedFrameworks = frameworks.sort((a, b) => {
-      return b.surveys[2022Index][this.state.attribute] - a.surveys[2022Index][this.state.attribute]
-    })
-
     return (
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div style={{ display: "flex" }}>
@@ -33,13 +27,17 @@ export default class Chart extends Component {
           ))}
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <button onClick={() => this.handleClick("retention")}>Retention</button>
+          <button onClick={() => this.handleClick("retention")}>
+            Retention
+          </button>
           <button onClick={() => this.handleClick("interest")}>Interest</button>
           <button onClick={() => this.handleClick("usage")}>Usage</button>
-          <button onClick={() => this.handleClick("awareness")}>Awareness</button>
+          <button onClick={() => this.handleClick("awareness")}>
+            Awareness
+          </button>
         </div>
-        {sortedFrameworks.map((framework) => (
-          <div style={{ display: "flex" }}>
+        {frameworks.map((framework) => (
+          <div style={{ display: "flex"}}>
             <div style={{ width: "100px", textAlign: "center" }}>
               {framework.name}
             </div>
