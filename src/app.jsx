@@ -1,15 +1,19 @@
-// import { useState } from 'preact/hooks'
+
 import "./app.css"
 import Chart from "./Chart.jsx"
+
+const attributesToDisplay = ["retention", "interest", "usage", "awareness"]
 
 export function App() {
   return (
     <div>
       <header>State of Javascript</header>
       <main>
-        <Chart />
+        <Chart  />
       </main>
-      <footer>Nav Links</footer>
+      <footer>
+        Nav Links
+        </footer>
     </div>
   )
 }
