@@ -1,18 +1,18 @@
-import { Component } from "preact"
-import { frameworks } from "../data/index.js"
+import { Component } from "preact";
+import { frameworks } from "../data/index.js";
 
-const attributeToDisplay = "usage"
+const attributeToDisplay = "usage";
 export default class Chart extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       attribute: attributeToDisplay,
-    }
+    };
   }
 
   handleClick(attribute) {
-    this.setState({ attribute: attribute })
+    this.setState({ attribute: attribute });
   }
 
   render() {
@@ -20,9 +20,9 @@ export default class Chart extends Component {
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div style={{ display: "flex" }}>
           <div style={{ width: "100px", textAlign: "center" }} />
-          {frameworks[0].surveys.map((survey) => (
+          {[2016, 2017, 2018, 2019, 2020, 2021, 2022].map((year) => (
             <div style={{ width: "100px", textAlign: "center" }}>
-              {survey.year}
+              {year}
             </div>
           ))}
         </div>
@@ -37,18 +37,18 @@ export default class Chart extends Component {
           </button>
         </div>
         {frameworks.map((framework) => (
-          <div style={{ display: "flex"}}>
+          <div style={{ display: "flex" }}>
             <div style={{ width: "100px", textAlign: "center" }}>
               {framework.name}
             </div>
             {framework.surveys.map((survey) => (
               <div style={{ width: "100px", textAlign: "center" }}>
-                {survey[this.state.attribute]}
+                {survey[this.state.attribute] ? survey[this.state.attribute] : "-"}
               </div>
             ))}
           </div>
         ))}
       </div>
-    )
+    );
   }
 }
