@@ -1,8 +1,31 @@
 .numbers {
-   color: "blue";
-   background-color: aquamarine;
+   color: blue;
+   border: 2px solid white;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: "50px";
+    height:"50px";
+     text-align: "center"; 
+   
 }
 
 .test {
-   color: "red";
+   color: "green";
+   justify-content: flex-end;
+}
+
+.years {
+   display: flex;
+   justify-content: space-between;
+   margin: 1rem;
+   color: red;
+   
+}
+
+.line {
+   background-color: aqua;
+   display: flex;
+   justify-content: center;
 }

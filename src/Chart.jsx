@@ -18,11 +18,11 @@ export default class Chart extends Component {
 
   render() {
     return (
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <div style={{ display: "flex" }}>
-          <div style={{ width: "80px", textAlign: "center" }} />
+      <div style={{  display: "flex", flexDirection: "column" }}>
+        <div class="years" style={{display: "flex" }}>
+          <div style={{ width: "50px", textAlign: "center" }} />
           {[2016, 2017, 2018, 2019, 2020, 2021, 2022].map((year) => (
-            <div style={{ width: "80px", textAlign: "center" }}>{year}</div>
+            <div style={{ width: "50px", textAlign: "center" }}>{year}</div>
           ))}
         </div>
       
@@ -34,15 +34,17 @@ export default class Chart extends Component {
   )
   return (
     <div class="test" style={{ display: "flex" }}>
-      <div style={{ width: "80px", textAlign: "center" }}>
+      <div style={{ width: "50px", textAlign: "center" }}>
         {framework.name}
       </div>
       {missingYears.map(year => (
-        <div class="numbers" style={{ width: "80px", textAlign: "center" }} />
+        <div style={{color: "red", width: "50px", textAlign: "center" }} />
       ))}
       {framework.surveys.map((survey) => (
-        <div class="numbers" style={{ width: "80px", textAlign: "center" }}>
+        <div class="line">
+        <div class="numbers" style={{width: "50px", height:"50px", textAlign: "center" }}>
           {survey[this.state.attribute] ? survey[this.state.attribute] : "-"}
+        </div>
         </div>
       ))}
     </div>
