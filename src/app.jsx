@@ -13,6 +13,7 @@ export function App() {
       </main>
       <footer>
         Nav Links
+        {/* Hårdkoda llinks for buttons */}
         </footer>
     </div>
   )
