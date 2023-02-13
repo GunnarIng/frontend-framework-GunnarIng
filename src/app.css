@@ -3,7 +3,7 @@ header {
   background-color: #212121;
   padding: 10px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
 }
 
@@ -13,7 +13,7 @@ main {
     display: flex;
     justify-content: center;
     /* width: 800px; */
-    overflow: scroll;
+    /* overflow: scroll; */
     
 }
 

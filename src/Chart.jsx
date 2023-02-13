@@ -1,24 +1,27 @@
 import { Component } from "preact";
 import { frameworks } from "../data/index.js";
 import "./Chart.css";
+// import Footer from "./Footer.jsx";
 
-const attributeToDisplay = "retention";
+
+
 
 export default class Chart extends Component {
   constructor(props) {
     super(props);
-
+    
     this.state = {
-      attribute: attributeToDisplay,
+      attribute: "retention",
     };
   }
 
-  handleClick(attribute) {
+  handleAttributeChange = (attribute) => {
     this.setState({ attribute: attribute });
-  }
+  };
 
   render() {
     return (
+      
       <div class="data-chart" style={{ display: "flex", flexDirection: "column" }}>
         <div data-cy="chart-header"  class="years-row">
           <div  />
@@ -58,10 +61,12 @@ export default class Chart extends Component {
               <div data-cy="chart-cell"  class="frame-names-end" style={{ color: framework.color }}>
                 {framework.name}
               </div>
+              {/* <Footer onAttributeChange={this.handleAttributeChange} /> */}
             </div>
           );
         })}
       </div>
+      
     );
   }
 }

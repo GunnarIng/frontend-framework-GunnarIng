@@ -1,7 +1,9 @@
 import "./app.css"
 import Chart from "./Chart.jsx"
+import Footer from './Footer';
 
-const attributesToDisplay = ["retention", "interest", "usage", "awareness"]
+
+
 
 export function App() {
   return (
@@ -11,8 +13,7 @@ export function App() {
         <Chart />
       </main>
       <footer>
-        Nav Links
-        {/* Hårdkoda llinks for buttons */}
+       <Footer />
       </footer>
     </div>
   )
