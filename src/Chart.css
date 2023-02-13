@@ -19,44 +19,54 @@ hr {
   width: 100%;
   display: flex;
   /* z-index: -1; */
-   /* position: absolute; */
-
   position: absolute;
   justify-content: center;
   align-items: center;
   border: 2px solid;
 }
 
-.years {
+.data-chart {
+   font-size: 1.3rem;
+   display: flex;
+   color: #282828;
+   align-items: center;
+   max-width: 100%;
+   
+}
+
+.years-row {
+   
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   border: 2px solid green;
+  color: white;
 }
 
 .frame-names {
   display: flex;
   flex-direction: row;
   padding: 1.5rem;
-  gap: 2rem;
+  gap: 4rem;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid rgb(123, 119, 119);
+  border: 1px solid rgb(123, 119, 119);
 }
 
 .frame-names-end {
-   display: flex;
-   /* padding: 1.5rem; */
-   justify-items: center;
-   align-items: center;
-   /* border: 2px solid rgb(123, 119, 119); */
-   width: 54px;
+  display: flex;
+  /* padding: 1.5rem; */
+  justify-items: center;
+  align-items: center;
+  /* border: 2px solid rgb(123, 119, 119); */
+  width: 54px;
 }
 
-.frameworks-name{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   width: 54px;   
+.frameworks-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
 }
