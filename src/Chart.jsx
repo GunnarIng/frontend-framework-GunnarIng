@@ -35,29 +35,34 @@ export default class Chart extends Component {
           ].filter((year) => !yearsWithStatistics.includes(year))
           return (
             <div class="frame-names">
-              <div class="frame-name">{framework.name}</div>
+              
+              <div class="frame-name" style={{ color: framework.color }}>
+                {framework.name}
+              </div>
 
               {missingYears.map((year) => (
                 <div
-                  style={{ color: "red", width: "50px", textAlign: "center" }}
+                  style={{ color: framework.color, width: "50px", textAlign: "center" }}
                 />
               ))}
               {/* cells */}
               {framework.surveys.map((survey) => (
-                <div
-                  class="numbers"
-                  style={{
-                    width: "50px",
-                    height: "50px",
-                    textAlign: "center",
-                  }}
-                >
-                  {survey[this.state.attribute]
-                    ? survey[this.state.attribute]
-                    : "-"}
+                <div class="circles" style={{ color: framework.color }}>
+                  
+                  <div class="numbers"> 
+                  <hr style={{ color: framework.color }} />
+                  
+                    {survey[this.state.attribute]
+                      ? survey[this.state.attribute]
+                      : "-"}
+                      
+                  </div>
+                
                 </div>
               ))}
-              <div class="frame-names-end">{framework.name}</div>
+              <div class="frame-names-end" style={{ color: framework.color }}>
+                {framework.name}
+              </div>
             </div>
           )
         })}

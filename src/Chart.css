@@ -1,63 +1,44 @@
 .numbers {
-   color: aqua;
-   border: 2px solid white;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   margin: 1rem;
-   align-items: center;
-   width: "50px";
-    height:"50px";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.frame-names {
-   color: "green";
-   display: flex;
-   flex-direction: row;
-   padding: 1rem;
-   align-items: center;
-   justify-content: space-between;
-   border: 2px solid rgb(123, 119, 119);
-   
+.circles {
+  display: flex;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  background-color: #282828;
 }
 
+hr {
+  width: 100%;
+  display: flex;
+  /* z-index: -1; */
 
-
-
-.frame-names-end {
-   justify-content: center;
-   text-align: center;
-   width: 50px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
 }
 
 .years {
-   display: flex;
-   justify-content: space-around;
-   width: 100%;
-   color: white;
-   border: 2px solid green;
-   position: t
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border: 2px solid green;
 }
-
-
 
 .frame-names {
-   color: blueviolet;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between; */
-   
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgb(123, 119, 119);
 }
-.frame-names:nth-child(3) {
-   color: yellow;
-   
-}
-.frame-names:nth-child(4) {
-   color: green;
-   
-}
-
-
-
