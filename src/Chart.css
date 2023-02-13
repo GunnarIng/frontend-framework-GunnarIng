@@ -1,31 +1,63 @@
 .numbers {
-   color: blue;
+   color: aqua;
    border: 2px solid white;
    border-radius: 50%;
    display: flex;
    justify-content: center;
+   margin: 1rem;
    align-items: center;
    width: "50px";
     height:"50px";
-     text-align: "center"; 
+}
+
+
+.frame-names {
+   color: "green";
+   display: flex;
+   flex-direction: row;
+   padding: 1rem;
+   align-items: center;
+   justify-content: space-between;
+   border: 2px solid rgb(123, 119, 119);
    
 }
 
-.test {
-   color: "green";
-   justify-content: flex-end;
+
+
+
+.frame-names-end {
+   justify-content: center;
+   text-align: center;
+   width: 50px;
 }
 
 .years {
    display: flex;
-   justify-content: space-between;
-   margin: 1rem;
-   color: red;
+   justify-content: space-around;
+   width: 100%;
+   color: white;
+   border: 2px solid green;
+   position: t
+}
+
+
+
+.frame-names {
+   color: blueviolet;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between; */
+   
+}
+.frame-names:nth-child(3) {
+   color: yellow;
+   
+}
+.frame-names:nth-child(4) {
+   color: green;
    
 }
 
-.line {
-   background-color: aqua;
-   display: flex;
-   justify-content: center;
-}
+
+

@@ -1,4 +1,3 @@
-
 import "./app.css"
 import Chart from "./Chart.jsx"
 
@@ -7,14 +6,14 @@ const attributesToDisplay = ["retention", "interest", "usage", "awareness"]
 export function App() {
   return (
     <div>
-      <header>State of Javascript</header>
+      <header><h1>State of Javascript</h1></header>
       <main>
-        <Chart  />
+        <Chart />
       </main>
       <footer>
         Nav Links
         {/* Hårdkoda llinks for buttons */}
-        </footer>
+      </footer>
     </div>
   )
 }
