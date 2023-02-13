@@ -6,7 +6,7 @@ const attributesToDisplay = ["retention", "interest", "usage", "awareness"]
 export function App() {
   return (
     <div>
-      <header><h1>State of Javascript</h1></header>
+      <header data-cy="chart-header" ><h1>State of Javascript</h1></header>
       <main>
         <Chart />
       </main>
