@@ -53,10 +53,10 @@ Kodprojektet ska zippas ihop och lämnas in på läroplattformen. Rapporten och 
 - [ ] Rapporten följer uppgiftsbeskrivningen ovan.
 - [ ] Readmefilen har uppdaterats enligt beskrivning ovan.
 - [ ] Projektet här hostat på Netlify och går att nå via en demolänk i readme filen.
-- [ ] Git och GitHub har använts.
-- [ ] Sidan innehåller en header, footer och main.
+- [x] Git och GitHub har använts.
+- [x] Sidan innehåller en header, footer och main.
 - [ ] Sidan är responsiv.
-- [ ] Sidan visar "retention" informationen som finns i [data filen](./data/index.js) i enlighet med bilden ovan.
+- [x] Sidan visar "retention" informationen som finns i [data filen](./data/index.js) i enlighet med bilden ovan.
 
 _Gjorda krav ska kryssas för._
 

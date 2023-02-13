@@ -36,8 +36,8 @@ export default class Chart extends Component {
           return (
             <div class="frame-names">
               
-              <div class="frame-name" style={{ color: framework.color }}>
-                {framework.name}
+              <div class="framework" style={{ color: framework.color }}>
+               <div class="frameworks-name">{framework.name}</div> 
               </div>
 
               {missingYears.map((year) => (
@@ -50,14 +50,15 @@ export default class Chart extends Component {
                 <div class="circles" style={{ color: framework.color }}>
                   
                   <div class="numbers"> 
-                  <hr style={{ color: framework.color }} />
+                  <div class="hr" style={{ color: framework.color }} >
+                  {/* <hr style={{ color: framework.color }} /> */}
                   
                     {survey[this.state.attribute]
                       ? survey[this.state.attribute]
                       : "-"}
-                      
+                      <div/>
                   </div>
-                
+                  </div>
                 </div>
               ))}
               <div class="frame-names-end" style={{ color: framework.color }}>

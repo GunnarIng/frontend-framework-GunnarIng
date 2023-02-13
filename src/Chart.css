@@ -19,6 +19,7 @@ hr {
   width: 100%;
   display: flex;
   /* z-index: -1; */
+   /* position: absolute; */
 
   position: absolute;
   justify-content: center;
@@ -28,7 +29,7 @@ hr {
 
 .years {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   border: 2px solid green;
 }
@@ -36,9 +37,26 @@ hr {
 .frame-names {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 1.5rem;
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
   border: 2px solid rgb(123, 119, 119);
+}
+
+.frame-names-end {
+   display: flex;
+   /* padding: 1.5rem; */
+   justify-items: center;
+   align-items: center;
+   /* border: 2px solid rgb(123, 119, 119); */
+   width: 54px;
+}
+
+.frameworks-name{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 54px;   
 }
