@@ -9,13 +9,8 @@ header {
 }
 
 main {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
     overflow-x: scroll;
-    
-    
+     
 }
 
 

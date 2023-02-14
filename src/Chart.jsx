@@ -21,11 +21,11 @@ export default class Chart extends Component {
       <div
         class="data-chart"
         style={{ display: "flex", flexDirection: "column" }}
-      >
+      > 
         <div data-cy="chart-header" class="years-row">
-          <div />
+        <div/>
           {[2016, 2017, 2018, 2019, 2020, 2021, 2022].map((year) => (
-            <div style={{ width: "50px", textAlign: "center" }}>{year}</div>
+            <div class="years">{year}</div>
           ))}
           <div />
         </div>
@@ -33,7 +33,7 @@ export default class Chart extends Component {
         {frameworks.map((framework) => {
           const yearsWithStatistics = framework.surveys.map(
             (survey) => survey.year
-            )
+          )
           const missingYears = [
             2016, 2017, 2018, 2019, 2020, 2021, 2022,
           ].filter((year) => !yearsWithStatistics.includes(year))
@@ -45,20 +45,22 @@ export default class Chart extends Component {
                 style={{ backgroundColor: framework.color }}
               ></div>
               <div class="framework" style={{ color: framework.color }}>
-                <div data-cy="chart-cell" class="frameworks-name">
+                <div data-cy="chart-cell" class="left-frameworks-names {
+">
                   {framework.name}
                 </div>
               </div>
 
               {missingYears.map((year) => (
-                <div data-cy="chart-cell"
-                style={{
-                  color: framework.color,
-                  width: "54px",
-                  textAlign: "center",
-                }}
+                <div
+                  data-cy="chart-cell"
+                  style={{
+                    color: framework.color,
+                    width: "54px",
+                    textAlign: "center",
+                  }}
                 />
-                ))}
+              ))}
 
               {framework.surveys.map((survey) => (
                 <div data-cy="chart-cell">
@@ -79,7 +81,7 @@ export default class Chart extends Component {
 
               <div
                 data-cy="chart-cell"
-                class="frame-names-end"
+                class="right-frameworks-names"
                 style={{ color: framework.color }}
               >
                 {framework.name}
