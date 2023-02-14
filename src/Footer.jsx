@@ -1,14 +1,13 @@
-import "./Chart.jsx"
+import { Link } from "preact-router";
 import "./Footer.css";
 
-
-export default function Footer(props) {
+export default function Footer() {
   return (
     <div class="container">
-      <button onClick={() => props.onAttributeChange("retention")}>Retention</button>
-      <button onClick={() => props.onAttributeChange("interest")}>Interest</button>
-      <button onClick={() => props.onAttributeChange("usage")}>Usage</button>
-      <button onClick={() => props.onAttributeChange("awareness")}>Awareness</button>
+      <Link href="/?attribute=retention">Retention</Link>
+      <Link href="/?attribute=interest">Interest</Link>
+      <Link href="/?attribute=usage">Usage</Link>
+      <Link href="/?attribute=awareness">Awareness</Link>
     </div>
-  )
+  );
 }
