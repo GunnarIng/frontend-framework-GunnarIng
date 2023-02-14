@@ -17,13 +17,13 @@
 }
 
 .line {
-  width: 100%;
+  width: 75%;
   display: flex;
   z-index: -10;
   position: absolute;
   justify-content: center;
   align-items: center;
-  border: 2px solid;
+  height: 4px;
 }
 
 .data-chart {
@@ -33,12 +33,11 @@
   max-width: 100%;
   min-width: 400px;
   overflow-x: scroll;
-  
 }
 
 .years-row {
   display: flex;
-  font-size: 1,5rem;
+  font-size: 1, 5rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
   justify-content: space-evenly;
@@ -47,20 +46,24 @@
   color: white;
 }
 
+
+
 .frame-names {
   display: flex;
-  flex-direction: row;
-  padding: .7rem;
+  /* flex-direction: row; */
+  position: relative;
+  padding: 0.7rem;
   width: 100%;
   /* font-size: 10px; */
   gap: 3rem;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .frame-names-end {
   display: flex;
-  /* padding: 1.5rem; */
+
+  position: relative;
   justify-items: center;
   align-items: center;
   width: 54px;
