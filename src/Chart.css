@@ -16,10 +16,10 @@
   background-color: #282828;
 }
 
-hr {
+.line {
   width: 100%;
   display: flex;
-  z-index: -1;
+  z-index: -10;
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -29,9 +29,11 @@ hr {
 .data-chart {
   font-size: 1.3rem;
   display: flex;
-  color: #282828;
   align-items: center;
   max-width: 100%;
+  min-width: 400px;
+  overflow-x: scroll;
+  
 }
 
 .years-row {
