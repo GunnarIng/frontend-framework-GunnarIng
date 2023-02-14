@@ -38,8 +38,8 @@ export default class Chart extends Component {
           ].filter((year) => !yearsWithStatistics.includes(year));
           return (
             <div data-cy="chart-row" class="frame-names">
-              <div  class="framework" style={{ color: framework.color }}>
-                <div data-cy="chart-cell"  class="frameworks-name">{framework.name}</div>
+              <div class="framework" style={{ color: framework.color }}>
+                <div class="frameworks-name">{framework.name}</div>
               </div>
 
               {missingYears.map((year) => (
@@ -58,7 +58,7 @@ export default class Chart extends Component {
                 </div>
               ))}
 
-              <div data-cy="chart-cell"  class="frame-names-end" style={{ color: framework.color }}>
+              <div class="frame-names-end" style={{ color: framework.color }}>
                 {framework.name}
               </div>
               {/* <Footer onAttributeChange={this.handleAttributeChange} /> */}
