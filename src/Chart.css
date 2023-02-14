@@ -50,29 +50,27 @@
 
 .frame-names {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   position: relative;
   padding: 0.7rem;
   width: 100%;
-  /* font-size: 10px; */
+  
   gap: 3rem;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .frame-names-end {
   display: flex;
-
-  position: relative;
   justify-items: center;
   align-items: center;
-  width: 54px;
+  width: 80px;
 }
 
 .frameworks-name {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:  end ;
   justify-content: center;
-  width: 54px;
+  width: 80px;
 }

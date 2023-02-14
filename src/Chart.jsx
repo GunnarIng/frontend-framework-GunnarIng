@@ -51,7 +51,7 @@ export default class Chart extends Component {
               </div>
 
               {missingYears.map((year) => (
-                <div
+                <div data-cy="chart-cell"
                 style={{
                   color: framework.color,
                   width: "54px",
@@ -68,7 +68,6 @@ export default class Chart extends Component {
                     style={{ color: framework.color }}
                   >
                     <span class="numbers">
-                      {/* <hr style={{ color: framework.color }} /> */}
                       {/* This reads out each value and add a % symbol */}
                       {survey[this.state.attribute]
                         ? `${survey[this.state.attribute]}%`
