@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid white; */
+ height: 2rem;
+}
+
+.container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  width: 600px;
+}
