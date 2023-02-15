@@ -4,7 +4,7 @@ import { frameworks } from "../data/index.js"
 import "./Chart.css"
 
 export default function Chart() {
-  const [attribute, setAttribute] = useState("usage")
+  const [attribute, setAttribute] = useState("retention")
 
   const router = useRouter()
   
