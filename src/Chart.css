@@ -21,18 +21,17 @@
   display: flex;
   z-index: -10;
   position: absolute;
-  justify-content: center;
-  align-items: center;
   height: 4px;
 }
 
 .data-chart {
   font-size: 1.3rem;
   display: flex;
+  /* width: 100%; */
   align-items: center;
-  min-width: 400px;
-  
- 
+  /* justify-content: center; */
+  min-width: 360px;
+  overflow-x: auto;
 }
 
 .years-row {
@@ -46,19 +45,15 @@
   gap: 3rem;
   color: white;
 }
-.frameworks {
-  width: 10%;
-}
+
 .frame-names {
   display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
   padding: 0.7rem;
-  /* background-color: antiquewhite; */
-  /* width: 1060px; */
 
   gap: 2.3rem;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .right-frameworks-names {
