@@ -13,9 +13,18 @@ header {
 
 
 
-/* main { */
-    /* overflow-x: auto;   */
-/* } */
+main { 
+  /* overflow-x: auto;   */
+}
+
+
+
+@media screen and (max-width: 900px) {
+  main {
+    overflow-x: scroll;
+  }
+  
+}
 
 
 

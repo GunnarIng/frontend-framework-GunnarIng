@@ -4,10 +4,10 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div class="container">
-      <Link href="/?attribute=retention">Retention</Link>
-      <Link href="/?attribute=interest">Interest</Link>
-      <Link href="/?attribute=usage">Usage</Link>
-      <Link href="/?attribute=awareness">Awareness</Link>
+      <Link class="links" href="/?attribute=retention">Retention</Link>
+      <Link class="links" href="/?attribute=interest">Interest</Link>
+      <Link class="links" href="/?attribute=usage">Usage</Link>
+      <Link class="links" href="/?attribute=awareness">Awareness</Link>
     </div>
   );
 }

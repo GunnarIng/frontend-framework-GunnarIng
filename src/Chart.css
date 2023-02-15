@@ -22,7 +22,7 @@
   z-index: -10;
   position: absolute;
   justify-content: center;
-  
+
   height: 4px;
 }
 
@@ -30,8 +30,10 @@
   font-size: 1.3rem;
   display: flex;
   align-items: center;
-  min-width: 360px;
-  overflow-x: scroll;
+  min-width: 830px;
+  /* width: 830px; */
+  margin: 0 auto;
+  /* overflow-x: scroll; */
 }
 
 .years-row {
@@ -44,8 +46,6 @@
   gap: 2.5rem;
   color: white;
 }
-
-
 
 .frame-names {
   display: flex;
