@@ -6,7 +6,6 @@ export default function Chart() {
   // 
   const [router] = useRouter()
 
-  console.log(router.matches.attribute)
 
   return (
     // This is the chart
