@@ -11,7 +11,7 @@ export function App() {
       </header>
       <main>
         <Router>
-          <Route path="/" component={Chart} />
+          <Route  path="/:attribute"  component={Chart} />
         </Router>
       </main>
       <footer>

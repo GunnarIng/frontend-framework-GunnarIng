@@ -8,25 +8,10 @@ header {
   text-align: center;
   font-size: 18px;
   color: white;
-  
 }
-
-
-
-main { 
-  /* overflow-x: auto;   */
-}
-
-
 
 @media screen and (max-width: 900px) {
   main {
     overflow-x: scroll;
   }
-  
 }
-
-
-
-
-

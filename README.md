@@ -1,3 +1,23 @@
+
+
+
+Att starta projektet.
+
+`npm install`
+
+
+To start the server 
+`npm run dev`
+
+`npm test`
+
+
+
+
+
+
+
+
 # Frontend ramverk
 
 Inspirerad ifrån [stateofjs](https://stateofjs.com) där du som student väljer ett av de listade ramverken och skapar en enklare variant av sidan med det valda ramverket.
@@ -55,7 +75,7 @@ Kodprojektet ska zippas ihop och lämnas in på läroplattformen. Rapporten och 
 - [ ] Projektet här hostat på Netlify och går att nå via en demolänk i readme filen.
 - [x] Git och GitHub har använts.
 - [x] Sidan innehåller en header, footer och main.
-- [ ] Sidan är responsiv.
+- [x] Sidan är responsiv.
 - [x] Sidan visar "retention" informationen som finns i [data filen](./data/index.js) i enlighet med bilden ovan.
 
 _Gjorda krav ska kryssas för._
