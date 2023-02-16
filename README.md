@@ -1,24 +1,53 @@
+# Duplicate a chart from State of Js and make it interactive (**PREACT**)
+
+This is a schoolproject where the assigment where to do a copy of a chart from[The State Of Js](https://2022.stateofjs.com/en-US/) over all the top 11 frameworks/libraries used in 2022. I chose to use **Preact** as my framework of choice to build the chart.
+
+## Summary
+When starting this project, my skills were mostly based on vanilla JS and some TypeScript, so it was a steep learning curve. I had no clue how React, Preact, Vue, and other frameworks worked or what they were meant for. But after reading and looking at some documentation, I started to slowly grasp the concepts.
+
+Overall, it was a fun project, and with a deadline of 10 days, it was stressful but enriching. The hardest part, in my opinion, was probably combining the styling of the chart with the JavaScript and making all the Cypress tests work.
+
+I will provide a Netlify link as soon as the project is made public by my teacher.
 
 
 
-Att starta projektet.
+### Soures:
+[preact-router](https://www.npmjs.com/package/preact-router)
 
-`npm install`
+[Preact](https://preactjs.com/)
 
-
-To start the server 
-`npm run dev`
-
-`npm test`
+[React](https://reactjs.org/)
 
 
+#
+## Initialize the project
+To start the project you need to run the following commands:
 
+1.`npm install` - to get the correct modules
+2.`npm run dev` - Start the Vite-server
+3.`npm test`
 
+# Requirement for passing:
+- [x] The upper part of the chart that shows the years (2016-2022).
+- [x] Each row in the diabram should represent a framework.
+- [x] Each cell in each row should be created even the empty ones.
+- [x] The value displayed in a cell - a colored circle with a percentage.
+- [x] Have a colored line in each row with correct color from data.js file. 
+- [x] Use git and Github
+- [x] App should inc. a Head, main and footer. 
+- [x] App should be responsive
+- [x] Start page should show "rentention"
 
+### VG grade:
 
+- [x] Use client-routing and start show 'retention'
+- [x] All links should show proper stats with client-routing.
 
+<br>
+<br>
+<br>
 
-# Frontend ramverk
+# Frontend ramverk Assignment in Swedish
 
 Inspirerad ifrån [stateofjs](https://stateofjs.com) där du som student väljer ett av de listade ramverken och skapar en enklare variant av sidan med det valda ramverket.
 
@@ -72,7 +101,7 @@ Kodprojektet ska zippas ihop och lämnas in på läroplattformen. Rapporten och 
 - [ ] Uppgiften har lämnats in i tid (Kod, Rapport, Presentation).
 - [ ] Rapporten följer uppgiftsbeskrivningen ovan.
 - [ ] Readmefilen har uppdaterats enligt beskrivning ovan.
-- [ ] Projektet här hostat på Netlify och går att nå via en demolänk i readme filen.
+- [-] Projektet här hostat på Netlify och går att nå via en demolänk i readme filen.
 - [x] Git och GitHub har använts.
 - [x] Sidan innehåller en header, footer och main.
 - [x] Sidan är responsiv.
