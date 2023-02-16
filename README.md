@@ -22,10 +22,10 @@ I will provide a Netlify link as soon as the project is made public by my teache
 #
 ## Initialize the project
 To start the project you need to run the following commands:
+- Clone the repo and run the following commands in the terminal:<br><br>
+1.`npm i` - To get all packages and dependencies <br>
+2.`npm run dev` - Start the Vite-server <br>
 
-1.`npm install` - to get the correct modules
-2.`npm run dev` - Start the Vite-server
-3.`npm test`
 
 # Requirement for passing:
 - [x] The upper part of the chart that shows the years (2016-2022).
