@@ -1,9 +1,15 @@
+import { route } from "preact-router";
+import { useEffect } from "preact/hooks";
 import { Route, Router } from "preact-router";
-import "./app.css";
 import Chart from "./Chart.jsx";
 import Footer from "./Footer";
+import "./app.css";
 
 export function App() {
+  useEffect(() => {
+    route("/retention", true);
+  }, []);
+
   return (
     <div>
       <header>
@@ -11,7 +17,7 @@ export function App() {
       </header>
       <main>
         <Router>
-          <Route  path="/:attribute"  component={Chart} />
+          <Route path="/:attribute" component={Chart} />
         </Router>
       </main>
       <footer>

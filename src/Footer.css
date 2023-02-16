@@ -10,6 +10,7 @@ footer {
 
 .container {
   margin-top: 1.5rem;
+  background-color: #212121;
   font-size: 2rem;
 }
 
@@ -22,10 +23,11 @@ footer {
   margin: 0rem 0.5rem;
   cursor: pointer;
 }
+#212121
 
 Link:hover,
 Link:focus {
-  background-color: #191919;
+  background-color: #191919; /*detta is when chossen attribute is active*/
 
   outline: none;
 }

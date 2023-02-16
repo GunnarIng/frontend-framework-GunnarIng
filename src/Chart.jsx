@@ -1,5 +1,4 @@
 import { useRouter } from "preact-router"
-import { useEffect, useState } from "preact/hooks"
 import { frameworks } from "../data/index.js"
 import "./Chart.css"
 
@@ -7,11 +6,10 @@ export default function Chart() {
 
 
 
-  const [router] = useRouter()
+  const [router, setRouter] = useRouter()
 
   console.log(router.matches.attribute)
 
-  // This useEffect hook listens for changes in the URL query parameters and updates the attribute state variable accordingly
 
 
   return (
