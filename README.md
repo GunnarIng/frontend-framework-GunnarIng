@@ -25,6 +25,7 @@ To start the project you need to run the following commands:
 - Clone the repo and run the following commands in the terminal:<br><br>
 1.`npm i` - To get all packages and dependencies <br>
 2.`npm run dev` - Start the Vite-server <br>
+3.`npm run test` - Start the cypress test if wanted
 
 
 # Requirement for passing:
